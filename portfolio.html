@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CraftedByAnchal</title>
 
   <!-- Favicons -->
@@ -11,27 +11,23 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS -->
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-page">
 
-  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
+    <div class="container-fluid d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">𝕬𝖓𝖈𝖍𝖆𝖑 𝕻𝖆𝖑</h1>
       </a>
@@ -47,38 +43,28 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.instagram.com/swee_tie1214/"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/anchal1412"><i class="bi bi-linkedin"></i></a>
-      </div>
-
     </div>
   </header>
-  <!-- End Header -->
 
   <main class="main">
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Experienced web developer with expertise in designing websites, managing databases, and developing admin panels.</p>
       </div>
 
       <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters isotope-filters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">E-commerce</li>
             <li data-filter=".filter-branding">Web</li>
           </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container">
 
             <!-- NextGen -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
@@ -146,6 +132,7 @@
               </div>
             </div>
 
+            <!-- More Branding Items -->
             <!-- Astro Vastu -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/astro.PNG" class="img-fluid" alt="">
@@ -165,17 +152,6 @@
                 <p>Admin + user panel with payment gateway.</p>
                 <a href="assets/img/masonry-portfolio/phoneni.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://phoneninja.in/" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-
-            <!-- NP Sirsi -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/npsirsi.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>NP Sirsi</h4>
-                <p>Admin panel + App.</p>
-                <a href="assets/img/masonry-portfolio/npsirsi.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://npsirsi.in/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
 
@@ -201,21 +177,20 @@
               </div>
             </div>
 
-          </div><!-- End Portfolio Container -->
-        </div>
+          </div><!-- End Row -->
+
+        </div><!-- End Isotope -->
       </div>
     </section>
+
   </main>
 
-  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
