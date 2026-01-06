@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>CraftedByAnchal</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +26,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-</head>
 
+ 
+</head>
 <body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">𝕬𝖓𝖈𝖍𝖆𝖑 𝕻𝖆𝖑</h1>
       </a>
 
@@ -39,158 +47,220 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
+         
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+     <div class="social-links d-flex justify-content-center">
+     
+        <a href="https://www.instagram.com/swee_tie1214/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/anchal1412"><i class="bi bi-linkedin"></i></a>
+      </div>
+
     </div>
   </header>
 
   <main class="main">
 
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Experienced web developer with expertise in designing websites, managing databases, and developing admin panels.</p>
-      </div>
+        <p>Experienced web developer with expertise in designing websites, managing databases, and developing admin panels. Strong analytical and creative skills with a detail-oriented approach. Proficient in PHP/Laravel and Java FullStack.</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry">
 
-          <ul class="portfolio-filters isotope-filters">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">E-commerce</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul>
+          </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container">
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <!-- NextGen -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/nextjen.PNG" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>NextGen</h4>
-                <p>Admin panel integrated website.</p>
-                <a href="assets/img/masonry-portfolio/nextjen.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://geevosis.xyz/testing/nextgen/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <img src="assets/img/masonry-portfolio/nextjen.PNG" class="img-fluid" alt="NextGen Project">
+                <div class="portfolio-info">
+                  <h4>NextGen</h4>
+                  <p>Developed the NextGen Project website with a fully integrated admin panel.</p>
+                  <a href="assets/img/masonry-portfolio/nextjen.PNG" title="NextGen" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  <a href="https://geevosis.xyz/testing/nextgen/" title="Visit Project" class="details-link" target="_blank">
+                    <i class="bi bi-link-45deg"></i>
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <!-- Future Homes -->
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/fture.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Future Homes</h4>
-                <p>Admin panel & APIs.</p>
-                <a href="assets/img/masonry-portfolio/fture.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://geevosis.xyz/futurehomes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Designed both the admin panel and API functionalities for seamless backend operations.</p>
+                <a href="assets/img/masonry-portfolio/fture.PNG" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://geevosis.xyz/futurehomes" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+            </div><!-- End Portfolio Item -->
 
-            <!-- LeadPanther -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/leadpanther.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>LeadPanther</h4>
-                <p>Website with admin panel.</p>
-                <a href="assets/img/masonry-portfolio/leadpanther.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://leadpanther.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Developed the Leadpanther Project website with a fully integrated admin panel.</p>
+                <a href="assets/img/masonry-portfolio/leadpanther.PNG" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://leadpanther.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+            </div><!-- End Portfolio Item -->
 
-            <!-- Panna Jewellers -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/paann.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Panna Jewellers</h4>
-                <p>E-commerce website.</p>
-                <a href="assets/img/masonry-portfolio/paann.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://geevosis.xyz/panna_backend/project/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Complete e-commerce website featuring user and admin panels for efficient platform management.</p>
+                <a href="assets/img/masonry-portfolio/paann.PNG" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://geevosis.xyz/panna_backend/project/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+            </div><!-- End Portfolio Item -->
 
-            <!-- Saksham Food -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/saksham.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Saksham Food</h4>
-                <p>E-commerce website.</p>
-                <a href="assets/img/masonry-portfolio/saksham.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://geevosis.xyz/saksham/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>The Online Perfume</h4>
+                <p>Complete e-commerce website featuring user and admin panels for efficient platform management.</p>
+                <a href="assets/img/masonry-portfolio/saksham.PNG" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://theonlineperfume.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+            </div><!-- End Portfolio Item -->
 
-            <!-- Skywatt Elevator -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/skywat.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Skywatt Elevator</h4>
-                <p>Corporate website.</p>
-                <a href="assets/img/masonry-portfolio/skywat.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="http://skywattelevator.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>GO Branding </h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/skywat.PNG" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="http://skywattelevator.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+            </div><!-- End Portfolio Item -->
 
-            <!-- More Branding Items -->
-            <!-- Astro Vastu -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/searrch.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SearchAStay</h4>
+                <p>Designed both the admin panel and API functionalities for seamless backend operations.</p>
+                <a href="assets/img/masonry-portfolio/searrch.PNG" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://searchastay.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/fture.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sanatanapp</h4>
+                <p>Developed the project website with a fully integrated admin panel and App</p>
+                <a href="assets/img/masonry-portfolio/fture.PNG" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://geevosis.xyz/sanatanapp/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/astro.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Astro Vastu</h4>
-                <p>Admin panel website.</p>
-                <a href="assets/img/masonry-portfolio/astro.PNG" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="http://geevosis.xyz/astro-vastu/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Developed the project website with a fully integrated admin panel and App</p>
+                <a href="assets/img/masonry-portfolio/astro.PNG" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="http://geevosis.xyz/astro-vastu/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
-
-            <!-- Phone Ninja -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/phoneni.png" class="img-fluid" alt="">
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/astro.PNG" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Phone Ninja</h4>
-                <p>Admin + user panel with payment gateway.</p>
-                <a href="assets/img/masonry-portfolio/phoneni.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://phoneninja.in/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Phone ninja</h4>
+                <p>Developed the project website with a fully integrated admin panel and user panel with payment Gateway</p>
+                <a href="assets/img/masonry-portfolio/phoneni.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="http:https://phoneninja.in/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
-
-            <!-- SPS Naturals -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/npsirsi.png" class="img-fluid" alt="">
+                 
               <div class="portfolio-info">
-                <h4>SPS Naturals</h4>
-                <p>Admin panel website.</p>
-                <a href="assets/img/masonry-portfolio/npsirsi.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://hariomslaes.in/spsnaturls/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>NP Sirsi</h4>
+                <p>Developed the project website with a fully integrated admin panel and App</p>
+                <a href="assets/img/masonry-portfolio/npsirsi.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://npsirsi.in/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
-
-            <!-- The Online Perfume -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/npsirsi.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>The Online Perfume</h4>
-                <p>Admin panel website.</p>
-                <a href="assets/img/masonry-portfolio/npsirsi.png" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://theonlineperfume.com/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>NP Sirsi</h4>
+                <p>Developed the project website with a fully integrated admin panel and App</p>
+                <a href="assets/img/masonry-portfolio/npsirsi.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://hariomslaes.in/spsnaturls/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div>
+              <div class="portfolio-info">
+                <h4>NP Sirsi</h4>
+                <p>Developed the project website with a fully integrated admin panel and App</p>
+                <a href="assets/img/masonry-portfolio/npsirsi.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://theonlineperfume.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-          </div><!-- End Row -->
+          </div><!-- End Portfolio Container -->
 
-        </div><!-- End Isotope -->
+        </div>
+
       </div>
-    </section>
+
+    </section><!-- /Portfolio Section -->
 
   </main>
 
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Anchal</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="header-social-links">
+        <a href="github.com/anchal2948" class="github"><i class="bi bi-github-x"></i></a>
+        <a href="https://www.instagram.com/swee_tie1214" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/anchal1412" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Anchal</a> 
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
+
